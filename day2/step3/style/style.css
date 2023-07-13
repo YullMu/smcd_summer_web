@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* 요건 진짜 급진적으로 만들때 쓰지만 그냥도 많이 씀 ㅋㅋ */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* 한글 단어는 안잘리면서 영어는 잘라서라도 해결해주는 방법 */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  /* 알빠? 한글이라도 단어잘라서 줄바꿈 (모바일일때는 이걸 써야함 영역이 좁기 때문.. 그냥 이거 쓰는게 나을듯 */
+  /* word-break: break_all;
+  overflow-wrap: anywhere; */
+  margin: 0;
+}
+
+img,
+video,
+picture,
+svg,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  /* *에서 지정했지만 예시로 남겨둠 */
+  margin: 0;
+}
+
+.root {
+  height: 100dvh;
+  /* border: 10px solid slateblue; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section {
+  min-height: 1rem;
+  /* background-color: hsla(160, 100%, 50%, 0.1); */
+}
+
+h1 {
+  /* 레이아웃도 이상해지고, 다른 친구들도 마진 생겨버림.. */
+  /* margin-top: 3rem; */
+}
+
+.title {
+  /* 여전히 마진으로 넣으면 이상함 */
+  /*margin-top: 48px; */
+}
+
+.section {
+  /* padding-top: 3rem; */
+}
+
+/* #section-1 {
+    padding-top: 3rem;
+    */
+
+.section {
+  padding-block: 3rem;
+  /* 백그라운드가 잘려버리는 문제 ㅜㅜ */
+  /* max-width: 1024px; */
+}
+
+.section > * {
+  /* max-width: 1024px; */
+}
+
+.container {
+  /* background-color: hsla(240, 100%, 50%, 0.384); */
+  margin-inline: auto;
+  max-width: 1024px;
+  padding-inline: 1.5rem;
+}
+#section-1 {
+  padding-block: 5rem;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+#section-1 .title {
+  margin-bottom: 8px;
+  font-size: 3rem;
+}
+
+#section-1 p {
+  margin-top: 1rem;
+}
