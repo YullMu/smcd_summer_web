@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: cornsilk;
+  padding-block: 3.5rem;
+  padding-inline: 1.5rem;
+  height: 900px;
+}
+
+.card {
+  width: 18.75rem;
+  padding: 1.5rem;
+  background-color: bisque;
+  /* margin-inline: auto; */
+}
+
+.layout {
+  height: 100%;
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+}
